@@ -52,7 +52,9 @@ You also need to have the following files in the `images` folder (which should b
 
 - If a valid coupon is found, it will be applied to your order
 - In Continuous Mode, the coupon will also be saved to `Coupons.txt`
-- You can press and hold the DELETE key at any time to stop the script
+- You can press the DELETE key at any time to stop the script
+
+> **⚠️ IMPORTANT WARNING**: Do not use your mouse while the script is running! Mouse movements or clicks can interfere with the script's automation and cause it to malfunction. The script uses automated mouse movements to interact with the webpage, and any manual mouse input can disrupt this process. Keep your hands off the mouse until the script has completed its task or you've stopped it with the DELETE key.
 
 ## Operating Modes
 
