@@ -12,10 +12,10 @@ pip install keyboard
 pip install pyperclip
 ```
 
-You also need to have the following files in the same directory as the script:
-- `box.jpg` - Image of the coupon input field
-- `NOGEENCOUPON.png` - Image that appears when a valid coupon is found
-- `verwijder.png` - Image of the "verwijder" (remove) button for continuous mode
+You also need to have the following files in the `images` folder (which should be in the same directory as the script):
+- `images/box.jpg` - Image of the coupon input field
+- `images/NOGEENCOUPON.png` - Image that appears when a valid coupon is found
+- `images/verwijder.png` - Image of the "verwijder" (remove) button for continuous mode
 
 ## How to Use
 
@@ -52,7 +52,7 @@ You also need to have the following files in the same directory as the script:
 
 - If a valid coupon is found, it will be applied to your order
 - In Continuous Mode, the coupon will also be saved to `Coupons.txt`
-- You can press the DELETE key at any time to stop the script
+- You can press and hold the DELETE key at any time to stop the script
 
 ## Operating Modes
 
@@ -95,12 +95,25 @@ You also need to have the following files in the same directory as the script:
 - When accuracy of saved coupons is important
 - When you want to build a database of working coupons
 
+## Project Structure
+
+```
+pizza-coupon-finder/
+├── pizzakorting-nyp.py  # Main script
+├── README.md            # This documentation
+├── Coupons.txt          # Saved coupons (created automatically)
+└── images/              # Folder containing reference images
+    ├── box.jpg          # Image of the coupon input field
+    ├── NOGEENCOUPON.png # Image that appears when a valid coupon is found
+    └── verwijder.png    # Image of the "verwijder" (remove) button
+```
+
 ## Troubleshooting
 
-- **Script can't find the input field**: Make sure the coupon input field is clearly visible on screen
+- **Script can't find the input field**: Make sure the coupon input field is clearly visible on screen and the `images/box.jpg` file matches what's on screen
 - **Script doesn't recognize valid coupons**: Try adjusting the confidence level in the script
 - **Script stops unexpectedly**: Check if the website layout has changed
-- **"verwijder" button not found**: Make sure the button is visible and matches the `verwijder.png` image
+- **"verwijder" button not found**: Make sure the button is visible and matches the `images/verwijder.png` image
 
 ## Technical Notes
 
